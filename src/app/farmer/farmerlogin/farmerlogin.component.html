@@ -1,0 +1,25 @@
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  
+  <div class="login-container">
+    <!-- Farmer Login Form -->
+    <form class="login-form" [formGroup]="loginrequestFarmer" (ngSubmit)="handlesubmitFarmer()">
+      <h3>Farmer Login</h3>
+  
+      <label for="usernameFarmer">Username</label>
+      <input type="text" required placeholder="Email " id="usernameFarmer"  formControlName="username" />
+  
+      <label for="passwordFarmer">Password</label>
+      <input type="password" placeholder="Password" id="passwordFarmer" formControlName="password" />
+  
+      <button type="submit">Log In as Farmer</button><br>
+      <button routerLink="/register" type="button">Or Register</button>
+    </form>
+  
+    
+  
+    
+  </div>
+  

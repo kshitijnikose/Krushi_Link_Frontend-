@@ -1,0 +1,39 @@
+<nav>
+    <div class="nav-content">
+        <div class="logo">
+            <a href="#">FARMER'S</a>
+        </div>
+        <ul class="nav-links">
+
+            <li><a routerLink="/home" aria-label="Go to Home Page">HOME</a></li>
+            <li><a routerLink="/profile" aria-label="View Profile">PROFILE</a></li>
+            <li><a routerLink="/post" aria-label="View Profile">POST</a></li>
+            <li><a routerLink="/about" aria-label="About Us">ABOUT</a></li>
+            <li><a routerLink="/contact" aria-label="Contact Us">CONTACT</a></li>
+           
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="form-container">
+        <div class="image-upload">
+            <img alt="Placeholder image for product" height="200" src="Logo.jpg" width="300" />
+            <br>
+            <a onclick="document.getElementById('file-input').click()" >ADD IMAGE</a>
+            <input type="file" id="file-input" style="display: none;" />
+        </div>
+        <div class="form-fields">
+            <input id="product-name" placeholder="PRODUCT NAME" type="text" />
+            <input id="quantity" placeholder="QUANTITY" type="text" />
+            <input id="price" placeholder="PRICE" type="text" />
+            <textarea id="description" placeholder="Add text" rows="4"></textarea>
+            <div class="form-buttons">
+                <a routerLink="/home"><button type="button">POSTS</button></a>
+                
+                <button  >CANCEL</button>
+            </div>
+        </div>
+    </div>
+</div>
