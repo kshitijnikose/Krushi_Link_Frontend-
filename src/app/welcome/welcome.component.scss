@@ -1,0 +1,55 @@
+
+
+/* Carousel Styles */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ensure it spans the width of the parent */
+    overflow: hidden; /* Hide images that are out of view */
+}
+
+.carousel img {
+    object-fit: cover;
+    width: 100%; /* Corrected to include % unit */
+    height: 100%; /* Adjust the height to fit within the container */
+}
+
+.carousel .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel .arrow.left {
+    left: 20px;
+}
+
+.carousel .arrow.right {
+    right: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

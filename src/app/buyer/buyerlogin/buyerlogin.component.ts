@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import {  Router } from '@angular/router';
+import {  Router, RouterLink } from '@angular/router';
+import { HomeNavbarComponent } from "../../home-navbar/home-navbar.component";
 
 
 @Component({
   selector: 'app-buyerlogin',
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, RouterLink, HomeNavbarComponent],
   templateUrl: './buyerlogin.component.html',
   styleUrl: './buyerlogin.component.scss'
 })

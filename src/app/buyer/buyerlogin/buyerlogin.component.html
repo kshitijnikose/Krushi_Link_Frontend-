@@ -1,5 +1,8 @@
+
+<app-home-navbar></app-home-navbar>
 <!-- Buyer Login Form -->
-<form class="login-form" [formGroup]="loginrequestBuyer" (ngSubmit)="handlesubmitBuyer()">
+<div class="login-container">
+  <form class="login-form" [formGroup]="loginrequestBuyer" (ngSubmit)="handlesubmitBuyer()">
     <h3>Buyer Login</h3>
 
     <label for="usernameBuyer">Username</label>
@@ -9,5 +12,7 @@
     <input type="password" placeholder="Password" id="passwordBuyer" formControlName="password" />
 
     <button type="submit">Log In as Buyer</button><br>
-    <button routerLink="/register" type="button">Or Register</button>
+
+    <button routerLink="/buyer" type="button">Or Register</button>
   </form>
+</div>
