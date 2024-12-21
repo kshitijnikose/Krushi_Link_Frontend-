@@ -3,10 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
+import { HomeNavbarComponent } from "../../home-navbar/home-navbar.component";
 
 @Component({
   selector: 'app-farmerlogin',
-  imports: [ReactiveFormsModule, CommonModule, RouterLink],
+  imports: [ReactiveFormsModule, CommonModule, RouterLink, HomeNavbarComponent],
   templateUrl: './farmerlogin.component.html',
   styleUrl: './farmerlogin.component.scss'
 })
@@ -30,8 +31,7 @@ export class FarmerloginComponent {
         this.httpclient.post(url, this.loginrequestFarmer.value).subscribe(
           (response: any) => {
             console.log(response);
-  
-  
+
             if (response) {
              
               this.router.navigate(['/home'])

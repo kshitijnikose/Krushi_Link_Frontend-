@@ -2,12 +2,14 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { HomeNavbarComponent } from "../../home-navbar/home-navbar.component";
+import { LoginNavbarComponent } from "../../login-navbar/login-navbar.component";
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  imports: [CommonModule, ReactiveFormsModule], // Removed unnecessary imports
+  imports: [CommonModule, ReactiveFormsModule, HomeNavbarComponent, LoginNavbarComponent], // Removed unnecessary imports
 })
 export class ContactComponent {
   constructor(private httpclient: HttpClient) {}
@@ -26,19 +28,21 @@ export class ContactComponent {
       this.responseMessage = `Thank you, ${name}, for contacting us!`;
 
       // Reset the form after submission
-      this.contactUs.reset();
+     
 
       const url = 'http://localhost:8080/contact';
       console.log(this.contactUs.value);
 
       this.httpclient.post(url, this.contactUs.value).subscribe(
         (response: any) => {
-          console.log(response);
+          console.log(response.value);
         },
         (error) => {
           console.log('Error while submitting the form: ' + error);
+          
         }
       );
+      this.contactUs.reset();
     }
   }
 }

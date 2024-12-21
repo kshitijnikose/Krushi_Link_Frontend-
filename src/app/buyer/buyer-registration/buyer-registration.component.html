@@ -1,34 +1,10 @@
-<nav>
-  <div class="nav-content">
-    <div class="logo">
-      <a href="#">FARMER'S</a>
-    </div>
-    <ul class="nav-links">
-      <li><a routerLink="/" aria-label="Go to Home Page">HOME</a></li>
-      <li><a routerLink="/card" aria-label="View card">CARD</a></li>
-      <li><a routerLink="/profile" aria-label="View Profile">PROFILE</a></li>
-      <li><a routerLink="/about" aria-label="About Us">ABOUT</a></li>
-      <li><a routerLink="/contact" aria-label="Contact Us">CONTACT</a></li>
-      <li>
-        <a aria-label="Dropdown Page">DROPDOWN</a>
-        <ul class="dropdown-menu" aria-labelledby="DropdownMenu">
-          <li><a routerLink="/get-api" aria-label="Get-Api">Get-Api</a></li>
-          <li><a routerLink="/post-api" aria-label="Post-Api">Post-Api</a></li>
-          <li><a routerLink="/put-api" aria-label="Put-Api">Put-Api</a></li>
-          <li>
-            <a routerLink="delete-api" aria-label="Delete-Api">Delete-Api</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
-<p>Today's date : {{ today | date:'mediumDate' }}</p>
+
+<app-home-navbar></app-home-navbar>
+
+
 <div class="container">
   <div class="form-box">
     <div>{{tag | uppercase}}</div>
-
-    {{ myNumber | currency: "USD" }}
     
     <img
       alt="Profile Picture"
@@ -59,7 +35,7 @@
       <button type="button" class="cancel" (click)="reloadPage()">
         Cancel
       </button>
-      <a routerLink="/login"><button type="button">Login</button></a>
+      <a routerLink="/buyerlogin"><button type="button">Login</button></a>
     </form>
   </div>
 </div>

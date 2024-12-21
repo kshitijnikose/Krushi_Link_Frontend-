@@ -3,11 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { HomeNavbarComponent } from "../../home-navbar/home-navbar.component";
 
 
 @Component({
   selector: 'app-farmer-registration',
-  imports: [ReactiveFormsModule,CommonModule,RouterLink],
+  imports: [ReactiveFormsModule, CommonModule, RouterLink, HomeNavbarComponent],
   templateUrl: './farmer-registration.component.html',
   styleUrl: './farmer-registration.component.scss'
 })

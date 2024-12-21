@@ -5,10 +5,11 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { time } from 'console';
 import { timer } from 'rxjs';
+import { HomeNavbarComponent } from "../../home-navbar/home-navbar.component";
 
 @Component({
   selector: 'app-buyer-registration',
-  imports: [ReactiveFormsModule,CommonModule,RouterLink,UpperCasePipe],
+  imports: [ReactiveFormsModule, CommonModule, RouterLink, UpperCasePipe, HomeNavbarComponent],
   templateUrl: './buyer-registration.component.html',
   styleUrl: './buyer-registration.component.scss'
 })
@@ -30,6 +31,12 @@ constructor(private httpclient:HttpClient){ }
     console.log(this.buyer.value);
      this.httpclient.post(url,this.buyer.value).subscribe((response:any)=>   {
       console.log(response);
+
+      if(response){
+
+        
+      }
+
     }, error=> {
       console.log("error for adding buyer" + error);
     })
