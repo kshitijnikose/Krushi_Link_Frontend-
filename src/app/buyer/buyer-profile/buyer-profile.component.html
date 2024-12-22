@@ -1,0 +1,41 @@
+<app-buyer-navbar></app-buyer-navbar>
+    <div class="container">
+        <div class="profile">
+            
+            <h2>
+                BUYER PROFILE
+            </h2>
+        </div>
+        <form [formGroup]="buyer" (ngSubmit)="handleSubmit()">
+        <div class="form-group">
+            <input placeholder="First Name" type="text" formControlName="firstName" />
+        </div>
+
+        <div class="form-group">
+            <input placeholder="First Name" type="text" formControlName="lastName"/>
+        </div>
+
+
+        <div class="form-group">
+            <input placeholder="Email" type="email" formControlName="email_id" />
+        </div>
+        <div class="form-group">
+            <input placeholder="Phone No" type="text" formControlName="phone_number" />
+        </div>
+        <div class="form-group">
+            <input placeholder="Address" type="text" formControlName="address" />
+        </div>
+
+
+
+        <div class="buttons">
+            <button type="submit">Edit Profile</button>
+
+            <button routerLink="/buyer-password" type="button">
+                Change Password
+            </button>
+        
+        </div>
+    
+    
+    </form>

@@ -20,7 +20,7 @@ export class FarmerRegistrationComponent {
   farmer= new FormGroup({  
     firstName: new FormControl(),
      lastName:new FormControl(),
-     emailId:new FormControl(),
+     email:new FormControl(),
      phone_number : new FormControl(),
       address : new FormControl(),
       password:new FormControl()

@@ -12,7 +12,11 @@ import { FarmerloginComponent } from './farmer/farmerlogin/farmerlogin.component
 import { BuyerloginComponent } from './buyer/buyerlogin/buyerlogin.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
-import { LoginNavbarComponent } from './login-navbar/login-navbar.component';
+import { LoginNavbarComponent } from './farmer/login-navbar/login-navbar.component';
+import { BuyerHomeComponent } from './buyer/buyer-home/buyer-home.component';
+import { BuyerProfileComponent } from './buyer/buyer-profile/buyer-profile.component';
+import { BuyerContactComponent } from './buyer/buyer-contact/buyer-contact.component';
+import { BuyerPasswordComponent } from './buyer/buyer-password/buyer-password.component';
 
 export const routes: Routes = [
     // {
@@ -75,6 +79,18 @@ export const routes: Routes = [
     },{
         path:'login-navbar',
         component:LoginNavbarComponent
+    },{
+        path:'buyer-home',
+        component:BuyerHomeComponent
+    },{
+        path:'buyer-profile',
+        component:BuyerProfileComponent
+    },{
+        path:'buyer-contact',
+        component:BuyerContactComponent
+    },{
+        path:'buyer-password',
+        component:BuyerPasswordComponent
     }
    
 ];

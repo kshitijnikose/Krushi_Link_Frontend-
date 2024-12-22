@@ -1,0 +1,100 @@
+
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #40424041;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(172, 10, 10, 0.1);
+    border-radius: 8px;
+  }
+  
+  .profile {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  
+  .profile h2 {
+    color: #000000;
+    font-size: 24px;
+    margin-top: 0px;
+  }
+  
+  .form-group {
+    margin: 13px 0;
+    width: 100%;
+  }
+  
+  .form-group input {
+    width: 97%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .buttons button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #333333;
+  }
+  
+  .post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .post img {
+    width: 35%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .post .details {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  
+  .post .details input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .footer {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
