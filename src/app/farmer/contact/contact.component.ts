@@ -3,13 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { HomeNavbarComponent } from "../../home-navbar/home-navbar.component";
-import { LoginNavbarComponent } from "../../login-navbar/login-navbar.component";
+import { LoginNavbarComponent } from "../login-navbar/login-navbar.component";
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  imports: [CommonModule, ReactiveFormsModule, HomeNavbarComponent, LoginNavbarComponent], // Removed unnecessary imports
+  imports: [CommonModule, ReactiveFormsModule], // Removed unnecessary imports
 })
 export class ContactComponent {
   constructor(private httpclient: HttpClient) {}

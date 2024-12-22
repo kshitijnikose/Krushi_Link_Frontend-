@@ -9,7 +9,7 @@ import { HomeNavbarComponent } from "../../home-navbar/home-navbar.component";
 
 @Component({
   selector: 'app-buyer-registration',
-  imports: [ReactiveFormsModule, CommonModule, RouterLink, UpperCasePipe, HomeNavbarComponent],
+  imports: [ReactiveFormsModule, CommonModule, RouterLink, HomeNavbarComponent],
   templateUrl: './buyer-registration.component.html',
   styleUrl: './buyer-registration.component.scss'
 })
@@ -19,7 +19,7 @@ constructor(private httpclient:HttpClient){ }
   buyer= new FormGroup({  
     firstName: new FormControl(),
      lastName:new FormControl(),
-     email_id:new FormControl(),
+     email:new FormControl(),
      phone_number : new FormControl(),
       address : new FormControl(),
       password:new FormControl()
@@ -46,11 +46,4 @@ constructor(private httpclient:HttpClient){ }
   reloadPage(): void {
     window.location.reload(); // This will reload the entire page
   }
-
-  currenttiime=timer;
-
-  today=Date.now();
-  tag="Buyer Registration";
-
-  myNumber=1455554;
 }
